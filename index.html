@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr)); /* Creates a responsive grid */
+  gap: 20px; 
+  padding: 40px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-left:15%;
+}
+
+.image {
+  width: 80%;
+  height: 90%;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+backdrop-filter: blur;
+border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .text-overlay {
+    font-size: 1.5em;
+  }
+}
+button{
+width: 100%;
+height: 60px;
+background: transparent;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+cursor: pointer;
+font-size: 16px;
+font-weight: 900;
+color: ;
+backdrop-filter: blur(5px);
+border: none;
+outline: none;
+border-radius: 40px;
+text-transform: uppercase;
+transition: all 0.2s;
+transform: translateY(-5px);
+ margin: 4px 2px;
+}
+
+button:hover{
+background:  #062339;
+color: #eee;
+}
+
+button:active{
+transform: translateY(0px);
+}
+.text-overlay p:hover{
+color : #fa9e07 ;
+text-decoration: underline;
+font-size: 40;
+}
+
+
+</style>
+    
+</head>
+<body>
+    <nav>
+<img src = "logo.png" height = 15% width = 15%>
+        <a href="index.html"> Home
+</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="about.html">About</a>
+	<a href="products.html">Products</a>
+	
+    </nav>
+    <div class="container">
+        <h1><img src = "logo.png" height = 60% width = 60%>
+</h1>
+        <p>A name that suggests a treasure trove of products that can help customers achieve victory.</p>
+    </div>
+	<div class = "container">
+		
+		<h3 align = "left">Welcome to Victory Vault!</h3><br>
+<p align = "left">
+		A Name that Suggests a Treasure Trove of Products That Can Help You Achieve Victory.<br><br>
+
+		At Victory Vault, we are dedicated to fueling your passion for sports with top-tier products that can elevate your 		game to the next level. Whether you're a professional athlete, a weekend warrior, or just someone who loves 			sports, we've got the gear you need to reach your full potential.<br><br>
+
+		Explore our extensive collection of premium sports gear from the world’s leading brands like Nike, BMC, Nivia, 			and New Balance Cricket. From high-performance footwear and apparel to cutting-edge equipment, our products 		are designed to help you achieve your personal best, every time.<br><br>
+
+
+
+		<h3 align = "left">Why Choose Victory Vault?</h3><br>
+<p align = "left">
+		Top Brands, Top Performance: We carry only the best – Nike, BMC, Nivia, New Balance Cricket – trusted names in 		sports that guarantee quality, performance, and innovation.<br>
+		Wide Selection of Sports Products: Whether it's cricket, cycling, football, or fitness, we offer a diverse range of 		products to suit all sports enthusiasts.<br>
+		Victory Starts Here: Our mission is simple – to provide you with everything you need to achieve your victory. With 			Victory Vault, you’re equipped for success.<br>
+		Competitive Prices & Fast Shipping: We believe top-quality gear should be accessible to everyone, and our 				competitive prices and reliable shipping ensure you get the best value.<br>
+
+
+		<h4 align = "left">Start Your Winning Journey Today!<br>
+		<p align = "left">Browse our store and discover the treasure trove of sports products that will help you achieve victory.</h4>
+		</p>
+	</div></div>
+
+<h1 align = "center"><font size = 30>Popular Brands</font></h1>
+<hr width = 500 px color = #062339>
+  <div class="image-grid">
+    <div class="image-container">
+      <img src="index1.jpg" alt="Image 1" class="image">
+      <div class="text-overlay">
+	<p>Nike<br>
+	<a href = "nike.html"><button >Discover More</button></a></p></div>
+    </div>
+    <div class="image-container">
+      <img src="index2.jpg" alt="Image 2" class="image">
+      <div class="text-overlay">
+<p>New Balance<br>
+	<a href = "nb.html"><button >Discover More</button></a></p></div>
+    </div>
+</div>
+  <div class="image-grid">
+    <div class="image-container">
+      <img src="index3.jpg" alt="Image 3" class="image">
+      <div class="text-overlay">
+<p>BMC<br>
+	<a href = "cbm.html"><button >Discover More</button></a></p></div>
+    </div>
+    <div class="image-container">
+      <img src="index4.jpg" alt="Image 4" class="image">
+      <div class="text-overlay">
+<p>Nivia<br>
+	<a href = "nivia.html"><button >Discover More</button></a></p></div>
+    </div>
+  </div>
+</body>
+</html>

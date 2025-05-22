@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Copperplate Gothic";
+}
+body{
+font-family: "Copperplate Gothic";
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+ background: url(G:\New folder (2)\sport.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+}
+.wrapper{
+margin-left : 37%;
+margin-top : 3%;
+display : center;
+width: 430px;
+padding: 80px 40px;
+border: 2px solid rgba(6,35,57,.5);
+background: transparent;
+backdrop-filter: blur(20px);
+box-shadow: 0 0 10px #062339;
+border-radius: 10px;
+}
+
+.wrapper h1{
+font-size: 36px;
+color: white;
+font-weight: bolder;
+text-align: center;
+text-transform: uppercase;
+}
+
+.wrapper .inputbox{
+position: relative;
+height: 50px;
+width: 100%;
+margin: 20px 0;
+}
+
+.inputbox input{
+width: 100%;
+height: 100%;
+background: transparent;
+border: 2px solid rgba(6,35,57,.5);
+outline: none;
+border-radius: 40px;
+font-size:16px;
+color : #fff;
+padding: 20px;
+transition: all 0.4s;
+}
+.inputbox input::placeholder{
+color: cyan;
+}
+
+inputbox input:focus{
+border: 2px solid cyan;
+}
+
+.wrapper .remeber_forgot{
+display: flex;
+justify-content: space-between;
+font-size: 14px;
+margin: 15px 15px 20px;
+}
+
+.remember_forgot label input {
+color: cyan;
+margin: 10px 10px 10px 3px;
+}
+
+.remember_forgot p a{
+margin-left: 5px;
+color: #009698;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+}
+
+.remember_forgot a:hover{
+color : #fa0076 ;
+text-decoration: underline
+}
+
+.wrapper .btn{
+width: 100%;
+height: 45px;
+background: transparent;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+cursor: pointer;
+font-size: 16px;
+font-weight: 600;
+color: #222;
+backdrop-filter: blur(20px);
+border: none;
+outline: none;
+border-radius: 40px;
+text-transform: uppercase;
+transition: all 0.2s;
+transform: translateY(-5px);
+}
+
+.wrapper .btn:hover{
+background:  #062339;
+color: #eee;
+}
+
+.wrapper .btn:active{
+transform: translateY(0px);
+}
+
+.wrapper .register_link{
+margin: 20px 0 15px;
+font-size: 14.6px;
+text-align: center;
+}
+
+.register_link p a{
+margin-left: 5px;
+color: cyan;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+}
+
+.register_link p a:hover{
+text-decoration: underline;
+}
+</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="sport.jpg">
+    	<nav>
+		<img src = "logo.png" height = 15% width = 15%>
+        	<a href="index.html">Home</a>
+        	<a href="login.html">Login</a>
+       	 	<a href="signup.html">Signup</a>
+        	<a href="about.html">About</a>
+		<a href="products.html">Products</a>	
+    	</nav>
+	<div class="wrapper">
+	<form align = "center">
+		<h1>Login</h1>
+		<div class="inputbox">
+			<input type="text" placeholder="Username" required>
+		</div>
+
+		<div class = "inputbox">
+			<input type="password" placeholder="Password" required  size = "16" maxlength = "16">
+		</div> 
+
+		<div class="remember_forgot">
+			<label><p>
+				<input type = "checkbox">Remember Me
+				<a href="#">Forgot Password</a></p>
+			</label>
+		</div>
+		<button type = "reset" class="btn" >Login</button>
+		<div class="register_link">
+			<p><font color = #000000>Don't have an account?</font><a href="signup.html">Register</a></p>
+		</div>
+	</form>
+</div>
+</body>
+</html>
